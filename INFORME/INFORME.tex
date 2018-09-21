@@ -1,0 +1,182 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{wrapfig, blindtext}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+%Paquete para utilizar algoritmos
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{algorithmic}
+\pagestyle{myheadings}
+
+%Caratula
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\vspace*{-0.4in}
+
+{\fontsize{12}{30}\bf \selectfont UNIVERSIDAD NACIONAL DE INGENIERIA\\}
+
+{\fontsize{12}{40}\bf \selectfont FACULTAD DE CIENCIAS\\}
+\vspace*{0.15in} CIENCIAS DE LA COMPUTACI\'ON\\
+\vspace*{0.2in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=4.5cm,height=6.5cm]{UNI.png}
+\end{center}
+\end{figure}
+\begin{Large}
+\textbf{PROYECTO DE COMPUTACI\'ON GRÁFICA\\}
+\end{Large}
+\vspace*{0.2in}
+
+\begin{large}
+{\bf T\'itulo del Trabajo\\}
+\vspace*{0.1in}
+{\fontsize{12}{13}\selectfont 
+Creacion de Aplicación 3D\\ Juego Survivor of Gargantua\\}
+\end{large}
+\vspace*{0.3in}
+
+\begin{large}
+{\bf Autores} 
+\vspace*{0.1in}
+\\L\'azaro Camasca, Edson Nicks
+\\León Rios, Marco Naro
+\\Porlles Chavez, Zdena Miluska
+
+\end{large}
+
+\vspace*{0.4in}
+\begin{large}
+{\bf Profesor} 
+\vspace*{0.1in}
+\\Nuñez Iturri, Ciro Javier
+\end{large}
+
+\end{center}
+\begin{center}
+\begin{large}
+\vspace*{1.0in}
+Lima - Peru\\
+{\bf (2018)}
+\end{large}
+\end{center}
+\end{titlepage}
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+
+\section{Objetivos}
+\subsection{Objetivos Generales}
+\begin{itemize}
+
+\item Solucionar el problema de coloración de mapas computacionalmente utilizando el \textbf{lenguaje R}.
+\item Verificar que se cumple el teorema de los cuatro colores.
+\item Breve introducción a la inteligencia artificial.
+\end{itemize}
+
+\subsection{Objetivos Especificos}
+\begin{itemize}
+\item Recopilar mapas habiles con terminacion \textbf{shapefile} "SHP".
+\item Optener la matriz de adyacencia del mapa.
+\item Implementar el algoritmo de coloracion que satiface el PSR.
+\item Mostrar el mapa coloreado.
+\end{itemize}
+
+
+
+\pagebreak
+\section{Resumen Ejecutivo}
+[Lo que Ud. Esta Proponiendo Hacer] Una vision general de lo que ha
+hecho en su proyecto.
+
+Se implementará un videojuego de supervivencia.\\
+Debido a la inestabilidad de la tierra, los científicos empezaron a buscar nuevos planetas habitables, uno de ellos es Gargantua que aparentemente tenía las condiciones necesarias para ser habitada, para poder explorar este planeta se creó un Robot con Inteligencia Artificial llamado Keplin que fue enviado a Gargantua. Keplin tendrá que recolectar y analizar todo tipo de cosas que se encuentrará por su aventura.\\
+Keplin notará que el clima de Gargantua cambia radicalmente, lo cual dificultará su misión, también la presencia de criaturas que habitaban en Gargantua los cuales quieren acabar con Keplin.\\
+Keplin debe hacer todo lo posible para cumplir con su misión y volver a la tierra.
+
+\section{Descripción del Proyecto}
+
+Para la implementación de del proyecto se crearan un sistema en 3D que 
+contemplara objetos, ambientes como terrenos, fenómenos.\\
+
+\subsection{Objetos 3D}
+Se creara un objeto 3D en Blender y/o OpenGL el cual servira como el avatar en el juego.\\
+\textbf{Caracteristicas:}
+\begin{itemize}
+\item Color: El robot tendra un color amarillo.
+\item Extremidades: El robot poseer cuatro patas y una rueda para deslizarse mas rapido.
+\item Movimiento: El robot poseer movimientos de acuerdo a sus articulaciones.
+	\begin{itemize}
+		\item Cabeza: Implementará un movimiento inclinativo.
+		\item Cuello: Podrá usarlo para rotar la cabeza 360 grados.
+		\item Patas: Implementará un movimiento de desplazamiento.
+		\item Rueda: Implementará un movimiento rotacional.
+		
+	\end{itemize}
+	Para desplazarse se utilizarán las siguientes letras:
+		\begin{itemize}
+			\item w: desplazamiento hacia adelante.
+			\item s: desplazamiento hacia atras.
+			\item a: girar la cabeza en sentido antihorario.
+			\item d: girar la cabeza en sentido horario.
+			\item q: desplazamiento hacia la izquierda.
+			\item e: desplazamiento hacia la derecha.
+			\item Flecha arriba: la cabeza se inclina hacia arriba. 
+			\item Flecha abajo: la cabeza se inclina hacia abajo.
+			\item t: cambiar el modo de desplazamiento.
+			
+		\end{itemize}
+\item Sonido: Implementa sonidos dependiendo de la acción del robot.
+\item Textura: Se aplicaran texturas al robot para darle realismo.
+
+\end{itemize}
+
+\subsection{Ambiente}
+Estarán disponibles dos ambientes diferentes: cálido y gélido.
+\begin{itemize}
+	\item Textura: Se aplicará la textura Mip-Maps para darle mas realismo al mapa
+	\item Color: Los colores dependerán del ambiente, poseyendo luz cálida o luz fría según corresponda.
+	\item Sonido: El sonido dependerá del ambiente escogido.
+	\item Sombras: Se utilizará sombras para otorgarle realismo en el día y en la noche.
+	\item Objetos: Se implementarán objetos como nieve, rocas y meteoritos.
+	
+\end{itemize}
+
+\subsection{Modelado}
+
+\subsection{Cronograma}
+
+Las fechas en el cronograma deben coincidir con las fechas propuestas para evaluaciones de práctica del proyecto. En dichas ocasiones se presentarán y evaluarán los avances del proyecto.
+
+\section{Representación matemática}
+Incluirá las descripciones [preliminares] o utilizadas en los
+modelos o simulaciones.
+\section{Algoritmos e implementación computacional}
+Una descripción de los algoritmos que se
+[planean utilizar] utilizados incluyendo pseudo código.
+\section{Resultados}
+Una descripción de los resultados [esperados] de las actividades de
+modelamiento o simulación.
+\section{Conclusiones}
+Incluye las ventajas y desventajas del enfoque utilizado, aspectos inesperados
+del proyecto, trabajo futuro, etc.
+\section{Apéndice}
+Incluye información suplementaria
+\section{Bibliografia}
+
+\end{document}
