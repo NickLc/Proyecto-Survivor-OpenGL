@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  21 SEP 2018 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.27)  21 SEP 2018 16:51
 entering extended mode
 **./INFORME.tex
 (INFORME.tex
@@ -802,15 +802,16 @@ LaTeX Info: Redefining \nameref on input line 24.
 \@outlinefile=\write4
 \openout4 = `INFORME.out'.
 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
 <UNI.png, id=66, 1204.5pt x 1514.65875pt>
 File: UNI.png Graphic file (type png)
 <use UNI.png>
 Package pdftex.def Info: UNI.png  used on input line 36.
 (pdftex.def)             Requested size: 128.02927pt x 184.94063pt.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [1
+ [1
 
 {C:/Users/ADMIN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./UNI.png>]
  (INFORME.toc)
@@ -829,29 +830,55 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+ [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+[4]
+<Cronograma_1.PNG, id=111, 589.4522pt x 247.67531pt>
+File: Cronograma_1.PNG Graphic file (type png)
+<use Cronograma_1.PNG>
+Package pdftex.def Info: Cronograma_1.PNG  used on input line 181.
+(pdftex.def)             Requested size: 426.79774pt x 256.091pt.
+<Cronograma_2.PNG, id=112, 251.43938pt x 186.6975pt>
+File: Cronograma_2.PNG Graphic file (type png)
+<use Cronograma_2.PNG>
+Package pdftex.def Info: Cronograma_2.PNG  used on input line 190.
+(pdftex.def)             Requested size: 213.39452pt x 184.95073pt.
+ [5 <./Cronograma_1.PNG>] [6 <./Cronograma_2.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (INFORME.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `INFORME.out' has not changed.
-(rerunfilecheck)             Checksum: FC211D41710451E0826C93BAE3ADC88B;879.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+(rerunfilecheck)             Checksum: 5F690E1C4C1AF4BE7BD3B1D3F737E90E;883.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 19138 strings out of 493305
- 347300 string characters out of 3129802
- 449756 words of memory out of 3000000
- 22323 multiletter control sequences out of 15000+200000
+ 19156 strings out of 493305
+ 347555 string characters out of 3129802
+ 449833 words of memory out of 3000000
+ 22334 multiletter control sequences out of 15000+200000
  9535 words of font info for 23 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,56p,474b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,7n,56p,474b,593s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ADMIN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ecbx1000.pk> <C:\Users\ADMIN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecrm1200.pk> <C:\Users\ADMIN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -859,9 +886,9 @@ ec\dpi600\ecrm1200.pk> <C:\Users\ADMIN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
 \pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\ADMIN\AppData\Local\MiKTeX
 \2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on INFORME.pdf (5 pages, 430809 bytes).
+Output written on INFORME.pdf (7 pages, 453368 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 
